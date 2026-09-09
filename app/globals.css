@@ -108,3 +108,40 @@ html[data-effects=off] .project,html[data-effects=off] .community-offer,html[dat
 @media(max-width:1000px){.hero-stage{min-height:450px}.hero-stage .portrait{height:370px;width:88%}.hero-layout{gap:1.5rem}.stage-label{font-size:.7rem}.project-visual{height:230px}.project.featured .project-visual{height:230px}.project-visual .visual-symbol{font-size:2.6rem}.form{padding:1.5rem}.contact-grid{gap:2rem}}
 @media(max-width:720px){.nav{top:8px;margin-top:8px;width:calc(100% - 1rem);border-radius:15px}.nav-inner{min-height:66px;width:calc(100% - 2rem)}.mobile-nav{border-radius:0 0 15px 15px}.hero{padding-top:2.5rem}.hero-layout{grid-template-columns:1fr;gap:2rem}.hero h1{font-size:clamp(2.6rem,10.4vw,4.6rem)}.hero-stage{min-height:430px;max-width:450px;width:100%;justify-self:center}.hero-stage .portrait{width:82%;height:360px;max-width:340px}.stage-orbits i{inset:7% 0}.stage-orbits i:nth-child(2){inset:7% -2%}.stage-label{left:2%;top:1%}.stage-coordinate{font-size:.7rem;right:3%;bottom:0}.hero-bottom{padding:1.5rem 1rem;border-radius:16px;margin-top:2rem}.hero-facts{gap:.7rem}.hero-facts>div{padding-left:.6rem}.hero-facts strong{font-size:1.2rem}.hero-facts span{font-size:.8125rem}.project-visual .visual-symbol{font-size:2.5rem}.project-body{padding:1.5rem}.services{border-radius:24px 24px 0 0}.community-offer .offer-price{font-size:3.75rem}.form{padding:1.25rem}.motion-control{bottom:12px;right:12px}.hero-meta{margin-bottom:2rem}}
 @media(prefers-reduced-motion:reduce){.stage-orbits i,.hero h1 em,.title-line{animation:none!important}.project,.community-offer,.hero-stage,.button:hover,.socials a:hover{transform:none!important}.reading-progress{display:none}.project-visual.art img{transform:none!important}}
+/* Bilingual navigation and an editorial, spatial composition. */
+.nav-controls{display:flex;gap:1rem;align-items:center;flex-shrink:0}
+.language-switch{display:flex;align-items:center;gap:.35rem;padding:.2rem .4rem;border:1px solid #a6c4f035;border-radius:100px;background:#070d16c9;white-space:nowrap}
+.language-switch button{font-size:.8125rem;border:0;background:transparent;color:#aebfd5;padding:.5rem .55rem;min-height:40px;border-radius:100px;transition:color .25s,background .25s}
+.language-switch button[aria-pressed=true]{background:#e5efff;color:#102036;box-shadow:0 0 18px #9ec8ff20}
+.language-switch>span{color:#758ba6;font-size:.875rem}
+.depth-field{position:absolute;width:132%;height:128%;left:-16%;top:-14%;z-index:1;pointer-events:none;opacity:.8}
+.hero-stage{min-height:590px;isolation:isolate}
+.hero-stage:before{content:'';position:absolute;inset:9% -8%;border-radius:50%;background:radial-gradient(ellipse,#40689b22,transparent 65%);filter:blur(20px);pointer-events:none}
+.hero-stage .portrait{height:460px;width:78%;border-radius:140px 140px 24px 24px;border-color:#e3bd9766;background:linear-gradient(135deg,#a9c3d928,#172336);box-shadow:0 35px 100px #0009,inset 0 1px 0 #ffffff45}
+.hero-stage .portrait img{filter:saturate(.8) contrast(1.06)}
+.stage-orbits{opacity:.55}.stage-label{top:8%;left:0;color:#f1c5a9;border-color:#f1c5a944;background:#171c27e6}
+.stage-coordinate{bottom:4%;right:-1%}
+.hero h1{font-size:clamp(3rem,5.9vw,6rem);line-height:1.04;letter-spacing:-.075em}
+.hero-meta{margin-bottom:1.75rem}.hero-bottom{margin-top:1rem}
+.hero-copy{font-size:1.0625rem;max-width:490px}
+#portfolio .section-head{padding-bottom:2rem;border-bottom:1px solid #adc5e62a}
+#portfolio .section-head h2{font-size:clamp(2.5rem,4.8vw,4.5rem)}
+.work-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:1.5rem}
+.project{grid-column:span 2}.project.featured,.project:nth-child(2){grid-column:span 3}
+.project.featured .project-visual,.project:nth-child(2) .project-visual{height:310px}
+.project:nth-child(2) .project-visual.art img{object-position:center}
+.project-visual.art:after{background:linear-gradient(#040e1855,transparent 30%,#040e18b0)}
+.project-visual .visual-top{font-size:.75rem;letter-spacing:.11em}
+.project.featured .project-body,.project:nth-child(2) .project-body{padding:2rem}
+.project.featured h3,.project:nth-child(2) h3{font-size:1.65rem}
+.project-visual:after{transition:opacity .4s}.project-link{padding-top:1.2rem}
+.section-head .eyebrow{letter-spacing:.18em}.section-head>p{line-height:1.9}
+.services{border-radius:48px 48px 0 0}.community-offer{padding:3rem;border-radius:26px}
+.community-offer:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(125deg,transparent 40%,#6ca1d916 60%,transparent 80%);pointer-events:none}
+.about-grid h2{font-size:clamp(2.5rem,5vw,4.5rem)}.about-copy{border-left:1px solid #bdd6fc2b;padding-left:2.5rem}
+.contact h2{font-size:clamp(2.5rem,4.5vw,4.5rem)}
+.footer .brand{font-size:clamp(2rem,5vw,4rem);letter-spacing:-.075em}
+html[lang=en] .hero h1{font-size:clamp(3rem,5.3vw,5.4rem)}
+html[lang=en] .nav-links{gap:1.4rem}
+@media(max-width:1100px){.nav-links{gap:1rem;font-size:.8125rem}.nav-contact{display:none}.hero-stage{min-height:490px}.hero-stage .portrait{height:390px}.project.featured .project-visual,.project:nth-child(2) .project-visual{height:270px}.work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.project,.project.featured,.project:nth-child(2){grid-column:span 1}.project-visual .visual-symbol{font-size:2.3rem}.community-offer{padding:2rem}}
+@media(max-width:720px){.nav-inner{gap:.5rem;width:calc(100% - 1.5rem)}.nav-controls{gap:.5rem}.nav .brand{font-size:1.3rem}.nav .menu-toggle{padding:.5rem}.language-switch{gap:.1rem;padding:.15rem}.language-switch button{font-size:.75rem;min-height:40px;padding:.45rem .4rem}.language-switch>span{font-size:.75rem}.hero-stage{min-height:450px}.hero-stage .portrait{height:350px;width:76%;border-radius:130px 130px 20px 20px}.hero h1,html[lang=en] .hero h1{font-size:clamp(2.65rem,10.3vw,4.5rem)}.hero-meta{margin-bottom:2rem}.stage-label{top:4%;left:2%}.stage-coordinate{right:2%;bottom:3%}.depth-field{width:116%;left:-8%;height:116%;top:-8%}.work-grid{grid-template-columns:1fr}.project.featured .project-visual,.project:nth-child(2) .project-visual{height:270px}.project.featured .project-body,.project:nth-child(2) .project-body{padding:1.5rem}.community-offer{padding:1.5rem}.about-copy{padding-left:0;border-left:0}.services{border-radius:26px 26px 0 0}.hero-copy{font-size:1rem}}
