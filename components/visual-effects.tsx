@@ -87,8 +87,8 @@ export function VisualEffects() {
                     continue;
                 observer?.unobserve(entry.target);
                 const animation = entry.target.animate([
-                    { opacity: 0.25, transform: 'perspective(1100px) translate3d(0, 36px, 0) rotateX(5deg)' },
-                    { opacity: 1, transform: 'perspective(1100px) translate3d(0, 0, 0) rotateX(0deg)' }
+                    { opacity: 0.25, filter:'blur(4px)', transform: 'perspective(1100px) translate3d(0, 36px, 0) rotateX(5deg)' },
+                    { opacity: 1, filter:'blur(0px)', transform: 'perspective(1100px) translate3d(0, 0, 0) rotateX(0deg)' }
                 ], { duration: 760, easing: 'cubic-bezier(.16,1,.3,1)' });
                 animations.add(animation);
                 animation.onfinish = () => animations.delete(animation);
